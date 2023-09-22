@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div>
-      <input type="file" onChange={handleFileChange} />
+      <input type="file" multiple onChange={handleFileChange} />
     </div>
   );
 }
