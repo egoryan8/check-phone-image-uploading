@@ -1,18 +1,11 @@
+import React from 'react';
 import './App.css';
-import {useState} from "react";
+import СameraCapture from './Сameracapture';
 
 function App() {
-  const [selectedFile, setSelectedFile] = useState(null);
-
-  // Обработчик события выбора файла
-  const handleFileChange = (event) => {
-    const file = event.target.files[0];
-    setSelectedFile(file);
-  };
-
   return (
-    <div>
-      <input type="file" multiple onChange={handleFileChange} />
+    <div className="App">
+      <СameraCapture />
     </div>
   );
 }
