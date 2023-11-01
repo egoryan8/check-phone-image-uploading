@@ -6,7 +6,7 @@ function СameraCapture() {
 
   useEffect(() => {
     // Запрашиваем доступ к фронтальной камере
-    const constraints = { video: { facingMode: 'user' } };
+    const constraints = { video: { facingMode: 'environment' } };
     navigator.mediaDevices
       .getUserMedia(constraints)
       .then((mediaStream) => {
