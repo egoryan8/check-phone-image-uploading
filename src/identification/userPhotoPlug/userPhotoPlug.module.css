@@ -1,0 +1,43 @@
+.wrapper {
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.plugImg {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.overlay {
+    box-sizing: content-box;
+    position: absolute;
+    width: 327px;
+    height: 391px;
+    border: 1000px solid rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+
+.text {
+    position: absolute;
+    width: 100%;
+    max-width: 320px;
+    top: 97px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    color: white;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
